@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+#foo img{
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+#foo img:hover {
+    margin-top: 40px;
+}
+
+</style>
+<title>Kevin Tang</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 600,
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header">
+    <hgroup>
+      <h1><a href="index.html"><span>K</span>evin <span>T</span>ang</a></h1>
+      <h3><i>Linguist</i></h3>
+    </hgroup>
+    <!-- ################################################################################################ -->
+    <nav id="topnav">
+      <ul class="topnav clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="CV.html">Curriculum Vitae </a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li class="last"><a href="Tools.html">Tools</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <!-- main content -->
+    <div id="homepage">
+      <!-- Introduction -->
+      <section id="intro">
+        <article class="one_half">
+          <center><h1 class="shout">Kevin Tang</h1> <!--<h2 class="shout"><i>Linguist - Speech Scientist</i></h2>--></center><center><h2 class="shout"><i>Linguist</i></h2></center>
+          <div id="foo">          
+          <a href="CV.html"><img src="images/demo/ring1.png" alt=""></a>
+      	  <a href="Research.html"><img src="images/demo/ring2.png" alt=""></a>
+          <a href="Tools.html"><img src="images/demo/ring3.png" alt=""></a>
+          </div>
+      </article>
+        <article class="one_half last">
+          <h1>About Me</h1>
+          <a href="#"><img src="images/profile_color.jpg" alt="" style="float:right;"></a>
+          <p style="text-align:left;font-size:20px;">I am a PhD candidate in <a href="http://www.ucl.ac.uk/psychlangsci/research/linguistics" target="_blank">Linguistics</a>   in the <a href="https://www.ucl.ac.uk/psychlangsci/" target="_blank">Division of Psychology and Language Sciences</a> at <a href="www.ucl.ac.uk" target="_blank">University College London</a>. </p><p style="text-align:left;font-size:20px;">My interests within linguistics are speech perception, lexicon modelling, big data, psycholinguistics, phonetics, and phonology.</p>
+        </article>
+        <div class="clear"></div>
+      </section>
+      <!-- / Introduction -->
+      <!-- ########################################################################################## -->
+      <!-- Services -->
+      <section id="services" class="last clear">
+        <article class="one_third">
+          <hgroup>
+            <h1>Latest News</h1>
+          </hgroup>
+          <p>Coming soon</p>
+          <footer><a href="#">Read More &raquo;</a></footer>
+        </article>
+        <article class="one_third">
+          <hgroup>
+            <h1>Research</h1>
+          </hgroup>
+          <p>Linguistic patterns are pervasive. They can be found in our everyday life, and are not confined to ideal laboratory environments.</p><p>Like never before, data can be gathered and processed in huge quantities. So-called <i>Big Data</i> can be very revealling and is complementary to the tradtional approaches in laboratory linguistics. Most importantly, it provides us means to establish the ecological validity of theoretical and experimental constructs.</p><p>In my research, I compile big data using data-mining and crowd-sourcing techniques. I employ Natural Language Processing tools to answer theoretical questions from the data itself.</p>
+          <footer><a href="Research.html">Read More &raquo;</a></footer>
+        </article>
+        <article class="one_third last">
+          <hgroup>
+            <h1>Contact</h1>            
+          </hgroup>
+          <p>Email: <a href="mailto:kevin.tang.10@ucl.ac.uk" target="_blank">kevin.tang.10@ucl.ac.uk</a></p><p>Tel: +44/(0) 788 098 3946</p><p>Address: Rm 102, Chandler House, 2 Wakefield St,London WC1N 1PF</p> <p>Skype: kevin.tang.cantab <br>
+        Twitter: @tang_kevin <a href="https://twitter.com/tang_kevin" class="twitter-follow-button" data-show-count="false">Follow @tang_kevin</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+        Academia.edu: <a href="https://ucl.academia.edu/KevinTang" target="_blank">https://ucl.academia.edu/KevinTang</a><br>
+        ResearchGate.net: <a href="https://www.researchgate.net/profile/Kevin_Tang" target="_blank">https://www.researchgate.net/profile/Kevin_Tang</a>
+
+        </article>
+      </section>
+      <!-- / Services -->
+      <div class="clear"></div>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="index.html">Kevin Tang</a></p>
+  </footer>
+</div>
+</body>
+</html>

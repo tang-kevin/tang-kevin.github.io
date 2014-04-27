@@ -1,0 +1,70 @@
+/*
+Responsive Template Name: RS-5 Clean
+File: 1200px Framework CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+.one_half, 
+.one_third, .two_third, 
+.one_quarter, .two_quarter, .three_quarter, 
+.one_fifth, .two_fifth, .three_fifth, .four_fifth{display:inline-block; float:left; margin:0 0 0 5%; list-style:none;}
+
+.first, 
+.one_half:first-child, 
+.one_third:first-child, .two_third:first-child, 
+.one_quarter:first-child, .two_quarter:first-child, .three_quarter:first-child, 
+.one_fifth:first-child, .two_fifth:first-child, .three_fifth:first-child, .four_fifth:first-child{margin-left:0;}
+
+.two_half, .three_third, .four_quarter, .five_fifth{display:block; width:100%; clear:both;}
+
+/*----------------------------------------------Half Grid-------------------------------------*/
+
+/*
+.one_half{width:570px;} => 570 ÷ 1200 = 0.475 * 100 = 47.5
+.two_half{width:1200px;} => 1200 ÷ 1200 = 1 * 100 = 100
+*/
+
+.one_half{width:47.5%;}
+
+/*----------------------------------------------Third Grid-------------------------------------*/
+
+/*
+.one_third{width:360px;} => 360 ÷ 1200 = 0.3 * 100 = 30
+.two_third{width:720px; + 60px} => 780 ÷ 1200 = 0.65 * 100 = 65
+.three_third{width:1200px;} => 1200 ÷ 1200 = 1 * 100 = 100
+*/
+
+.one_third{width:30%;}
+.two_third{width:65%;}
+
+
+/*----------------------------------------------Quarter Grid-------------------------------------*/
+
+/*
+.one_quarter{width:255px;} => 255 ÷ 1200 = 0.2125 * 100 = 21.25
+.two_quarter{width:510px; + 60px} => 570 ÷ 1200 = 0.475 * 100 = 47.5
+.three_quarter{width:765px; + 120px} => 885 ÷ 1200 = 0.7375 * 100 = 73.75
+.four_quarter{width:1200px;} => 1200 ÷ 1200 = 1 * 100 = 100
+*/
+
+.one_quarter{width:21.25%;}
+.two_quarter{width:47.5%;}
+.three_quarter{width:73.75%;}
+
+
+/*----------------------------------------------Fifth Grid-------------------------------------*/
+
+/*
+.one_fifth{width:192px;} => 192 ÷ 1200 = 0.16 * 100 = 16
+.two_fifth{width:384px; + 60px} => 444 ÷ 1200 = 0.37 * 100 = 37
+.three_fifth{width:576px; + 120px} => 696 ÷ 1200 = 0.58 * 100 = 58
+.four_fifth{width:768px; + 180px} => 948 ÷ 1200 = 0.79 * 100 = 79
+.five_fifth{width:1200px;} => 1200 ÷ 1200 = 1 * 100 = 100
+*/
+
+.one_fifth{width:16%;}
+.two_fifth{width:37%;}
+.three_fifth{width:58%;}
+.four_fifth{width:79%;}

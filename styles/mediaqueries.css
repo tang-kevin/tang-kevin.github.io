@@ -1,0 +1,142 @@
+/*
+Responsive Template Name: RS-5 Clean
+File: Media Queries CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+/* 240 */
+
+@media screen 
+and (min-width : 180px) 
+and (max-width : 319px) {
+	#header, #container, #footer{max-width:95%; margin:0 auto;}
+	
+	.one_half, 
+	.one_third, .two_third, 
+	.one_quarter, .two_quarter, .three_quarter, 
+	.one_fifth, .two_fifth, .three_fifth, .four_fifth{display:block; float:none; width:auto; margin:0 0 2% 0; padding:0;}
+	
+	#header hgroup{display:block; width:100%; float:none; margin:0 0 15px 0; padding:0; font-size:.8em; line-height:normal;}
+	#header hgroup h1{margin:0 0 10px 0;}
+	#header nav{display:block; width:100%; float:none; margin:0; padding:0; font-size:.8em;}
+	
+	#container{padding:30px 0 0 0; font-size:.8em;}
+	#container #homepage #intro, #container #homepage #services{margin:0 0 30px 0; padding:0;}
+	#container #homepage #intro article, #container #homepage #services article{display:block; float:none; width:100%; margin:0 0 50px 0; padding:0;}
+	#container #homepage #services article.last{margin-bottom:0;}
+	#container #homepage #intro article h1.shout{font-size:2.6em; margin-bottom:30px; font-variant:normal;}
+	#container #content, #container #right_column{float:none; width:auto; margin-bottom:50px;}
+	#container aside h2{text-align:left;}
+	
+	
+	#container #portfolio article figure img{margin:0 0 15px 0; padding:0; border:none;}
+	
+	#container #gallery figure header{text-align:center;}
+	#container #gallery figure ul li{display:block; float:none; width:100%; height:auto; margin:0 0 5% 0;}
+	#container #gallery figure ul li.last{margin:0 0 5% 0;}
+	#container #gallery figure ul li img{margin:0; padding:0; border:none;}
+
+	#container .pagination{display:block; width:100%; margin-bottom:30px;}
+	
+	#header, #footer{text-align:center;}
+	#footer p{float:none; line-height:1.6em;}
+	#footer p:first-child{margin-bottom:8px;}
+}
+
+/* 320px */
+
+@media screen 
+and (min-width : 320px) 
+and (max-width : 360px) {
+	#header, #container, #footer{max-width:95%; margin:0 auto;}
+
+	.one_half, 
+	.one_third, .two_third, 
+	.one_quarter, .two_quarter, .three_quarter, 
+	.one_fifth, .two_fifth, .three_fifth, .four_fifth{display:block; float:none; width:auto; margin:0 0 2% 0; padding:0;}
+	
+	#header hgroup{display:block; width:100%; float:none; margin:0 0 15px 0; padding:0;}
+	#header nav{display:block; width:100%; float:none; margin:0; padding:0; font-size:1em;}
+	
+	#container{padding:30px 0 0 0; font-size:.8em;}
+	#container #homepage #intro, #container #homepage #services{margin:0 0 30px 0; padding:0;}
+	#container #homepage #intro article, #container #homepage #services article{display:block; float:none; width:100%; margin:0 0 50px 0; padding:0;}
+	#container #homepage #services article.last{margin-bottom:0;}
+	#container #content, #container #right_column{float:none; width:auto; margin-bottom:50px;}
+	#container aside h2{text-align:left;}
+	
+	#container #portfolio article figure img{margin:0 0 15px 0; padding:0; border:none;}
+	
+	#container #gallery figure header{text-align:center;}
+	#container #gallery figure ul li{display:block; float:none; width:100%; height:auto; margin:0 0 5% 0;}
+	#container #gallery figure ul li.last{margin:0 0 5% 0;}
+	#container #gallery figure ul li img{margin:0; padding:0; border:none;}
+
+	#container .pagination{display:block; width:100%; margin-bottom:30px;}
+	
+	#header, #footer{text-align:center;}
+	#footer p{float:none; line-height:1.6em;}
+	#footer p:first-child{margin-bottom:8px;}
+}
+
+/* 480px */
+
+@media screen 
+and (min-width : 361px) 
+and (max-width : 615px) {
+	#header, #container, #footer{max-width:95%; margin:0 auto;}
+	
+	#header hgroup{display:block; width:100%; float:none; margin:0 0 15px 0; padding:0;}
+	#header nav{display:block; width:100%; float:none; margin:0; padding:0; font-size:1em;}
+	
+	#container{padding:30px 0 0 0; font-size:.8em;}
+	#container #homepage #intro article, #container #homepage #services article{display:block; float:none; width:100%; margin:0 0 50px 0; padding:0;}
+	#container #homepage #services article.last{margin-bottom:0;}
+	#container #content, #container #right_column{float:none; width:auto; margin-bottom:50px;}
+	#container aside h2{text-align:left;}
+	
+	#portfolio article.one_third{display:block; float:none; width:auto; margin-left:0; padding:0;}
+	
+	#container #gallery figure ul li img{margin:0; padding:0; border:none;}
+
+	#container .pagination{display:block; width:100%; margin-bottom:30px;}
+	
+	#footer{text-align:center;}
+	#footer p{float:none;}
+	#footer p:first-child{margin-bottom:8px;}
+}
+
+/* 768px */
+
+@media screen 
+and (min-width : 616px) 
+and (max-width : 959px) {
+	#header, #container, #footer{max-width:95%; margin:0 auto;}
+	
+	#header hgroup{margin:0 0 25px 0;}
+	#header nav{display:block; width:100%; float:none; margin:0; padding:0;}
+	
+	#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{font-size:1.6em; font-weight:normal;}
+	#container #homepage #services article hgroup h2{font-size:1.4em; font-weight:normal;}
+	#container #homepage #intro article h1.shout{font-size:3.8em;}
+}
+
+/* 960px */
+
+@media screen 
+and (min-width : 960px) 
+and (max-width : 1200px) {
+	#header, #container, #footer{max-width:95%; margin:0 auto;}
+	
+	#header nav{font-size:1.4em;}
+	
+	#container{font-size:.8em;}
+}
+
+/* 1200px */
+
+@media screen and (min-width: 1200px) {
+	#header, #container, #footer{max-width:1200px; margin:0 auto;}
+}

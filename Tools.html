@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Kevin Tang</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 600,
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header">
+    <hgroup>
+      <h1><a href="index.html"><span>K</span>evin <span>T</span>ang</a></h1>
+      <h3><i>Linguist</i></h3>
+    </hgroup>
+    <!-- ################################################################################################ -->
+    <nav id="topnav">
+      <ul class="topnav clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="CV.html">Curriculum Vitae </a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li class="last"><a href="Tools.html">Tools</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <h1>SUBTLEX-PT-BR</h1>
+    <p> SUBTLEX-PT-BR is a 61 million word corpus of conversational Brazilian Portugues, compiled using subtitle texts. <br><br>
+    Availability: Three versions of the SUBTLEX-PT-BR are available below: <br>
+    <ul>
+    <li><a href="http://crr.ugent.be/programs-data/subtitle-frequencies/subtlex-pt-br" target ="_blank">Unigram</a> - The most basic version, with OLD20 (Orthographical Neighbourhood Density)</li>
+    <li><a href="http://zipf.ugent.be/open-lexicons/interfaces/br-pt-lemmas/" target ="_blank">Lemmatised and Part Of Speech Tagged</a> - Useful for finding the frequency of lemmas and their relative forms and Part of Speech<br></li>
+    <li><a href="http://zipf.ugent.be/open-lexicons/interfaces/br-pt-bigrams/" target ="_blank">Bigram</a> - Useful for collocation frequency and identifying compounds</li>
+    </ul>
+    Citation:<br>
+    Tang, K. (2012) A 61 Million Word Corpus of Brazilian Portuguese Film Subtitles as a Resource for Linguistic Research. UCL Working Papers in Linguistics 24. [<a href="http://www.ucl.ac.uk/psychlangsci/research/linguistics/publications/wpl/12papers/Tang-UCLWPL" target ="_blank">pdf</a>] [<a href="Files/Tang2012_Brazilian.bib" target ="_blank">bib</a>]</p>
+
+    <h1>SUBTLEX-KR</h1>
+    <p>SUBTLEX-KR is a 90 million word corpus of conversational Korean, compiled using subtitle texts.<br><br>   
+    Availability: (Forthcoming), please email me if you would like to be notified when it becomes available: <a href="mailto:kevin.tang.10@ucl.ac.uk" target="_blank">kevin.tang.10@ucl.ac.uk</a><br><br>
+    Citation:<br>
+    Tang, K., <a href="http://www.f.waseda.jp/dechene/" target ="_blank">De Chene, B.</a> (2014, forthcoming)  A New Corpus of Colloquial Korean and its Applications. <a href="http://www.ninjal.ac.jp/labphon14/" target ="_blank">The 14th Laboratory Phonology Conference (LabPhon 14)</a>, Tachikawa, Tokyo, Japan. July 2014.</p>
+
+
+    
+    <!-- ################################################################################################ -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

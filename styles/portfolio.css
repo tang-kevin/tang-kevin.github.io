@@ -1,0 +1,19 @@
+/*
+Responsive Template Name: RS-5 Clean
+File: Portfolio CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#portfolio{display:block; width:100%;}
+#portfolio article{margin-bottom:60px;}
+#portfolio article header{margin:0 0 15px 0;}
+#portfolio article header h2{margin:0 0 8px 0; padding:0; text-transform:capitalize;}
+#portfolio article header .meta{font-size:11px; line-height:normal;}
+#portfolio article header .meta time, #portfolio article header .meta .tags{margin:0; padding:0;}
+#portfolio article figure{margin:0 0 15px 0;}
+#portfolio article figure img{margin:0 0 15px 0; padding:9px; border:1px solid #E2E2E2;}
+#portfolio article figcaption{}
+#portfolio article footer{display:inline-block; padding:5px 10px; color:#FFFFFF; background-color:#82A1A6;}
+#portfolio article footer a{color:#FFFFFF; background-color:#82A1A6;}

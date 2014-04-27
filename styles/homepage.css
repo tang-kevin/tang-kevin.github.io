@@ -1,0 +1,29 @@
+/*
+Responsive Template Name: RS-5 Clean
+File: Homepage CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#container #homepage{display:block; width:100%;}
+
+#container #homepage #intro{margin-bottom:60px; padding-bottom:30px; border-bottom:10px solid #E8E8E8;}
+#container #homepage #intro article{margin-bottom:30px;}
+#container #homepage #intro article img{}
+#container #homepage #intro article h1.shout{font-size:4.8em; margin-bottom:10px; font-variant:normal;}
+#container #homepage #intro article h1.shout:first-letter{font-size:inherit;}
+#container #homepage #intro article p{}
+#container #homepage #intro article footer{}
+
+#container #homepage #intro article h2.shout{font-size:3em; margin-bottom:10px; font-variant:normal;}
+#container #homepage #intro article h2.shout:first-letter{font-size:inherit;}
+
+#container #homepage #services{}
+#container #homepage #services article{}
+#container #homepage #services article hgroup{}
+#container #homepage #services article hgroup h1{}
+#container #homepage #services article hgroup h2{font-size:1.6em; line-height:.5em; font-weight:normal;}
+#container #homepage #services article hgroup h2:first-letter{font-size:inherit;}
+#container #homepage #services article footer{display:inline-block; padding:5px 10px; color:#FFFFFF; background-color:#82A1A6;}
+#container #homepage #services article footer a{color:#FFFFFF; background-color:#82A1A6;}
