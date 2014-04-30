@@ -430,7 +430,7 @@ Experigen.make_into_trial = function (that) {
 
 Experigen.loadUserID = function () {
 	var that = this;
-	var jsonp_url = this.settings.databaseServer + "getuserid.cgi?experimentName=" + this.settings.experimentName  + "&sourceurl=" + encodeURIComponent(window.location).replace("tang-kevin","tangkevin");
+	var jsonp_url = this.settings.databaseServer + "getuserid.cgi?experimentName=" + this.settings.experimentName  + "&sourceurl=" + encodeURIComponent(window.location);
 	
 	if (this.settings.online) {
 		// online mode: connect to the database server
@@ -481,7 +481,7 @@ Experigen.sendForm = function (formObj) {
 	
 	if (this.settings.online) {
 		// online mode	
-		var jsonp_url = this.settings.databaseServer + "dbwrite.cgi?" + formObj.serialize();
+		var jsonp_url = this.settings.databaseServer + "dbwrite.cgi?" + formObj.serialize().replace("tang-kevin","tangkevin");
 		$.ajax({
 			dataType: 'jsonp',
 			url: jsonp_url,  
@@ -510,7 +510,7 @@ Experigen.sendForm = function (formObj) {
 			formObj.append('<input type="hidden" name="deviceName" value="' + $.totalStorage('deviceName') + '">');
 			formObj.append('<input type="hidden" name="localTime" value="' + Date().toString() + '">');
 			var experiment = $.totalStorage(this.settings.experimentName) || [];
-			experiment.push(formObj.serialize());
+			experiment.push(formObj.serialize().replace("tang-kevin","tangkevin"));
 			$.totalStorage(this.settings.experimentName, experiment);
 		}
 
@@ -696,7 +696,7 @@ Experigen.advance = function(callerButton) {
 			   + "<input type='hidden' name='userCode' value='" + this.userCode + "'>"
 			   + "<input type='hidden' name='userFileName' value='" + this.userFileName + "'>"
 			   + "<input type='hidden' name='experimentName' value='" + this.settings.experimentName + "'>"
-			   + "<input type='hidden' name='sourceurl' value='" + encodeURIComponent(window.location).replace("tang-kevin","tangkevin") + "'>";
+			   + "<input type='hidden' name='sourceurl' value='" + encodeURIComponent(window.location) + "'>";
 			   
 
 	var suffix = "</form>";
