@@ -430,7 +430,7 @@ Experigen.make_into_trial = function (that) {
 
 Experigen.loadUserID = function () {
 	var that = this;
-	var jsonp_url = this.settings.databaseServer + "getuserid.cgi?experimentName=" + this.settings.experimentName  + "&sourceurl=" + encodeURIComponent(window.location);
+	var jsonp_url = this.settings.databaseServer + "getuserid.cgi?experimentName=" + this.settings.experimentName  + "&sourceurl=" + encodeURIComponent(window.location).replace("tang-kevin","tangkevin");
 	
 	if (this.settings.online) {
 		// online mode: connect to the database server
@@ -696,7 +696,7 @@ Experigen.advance = function(callerButton) {
 			   + "<input type='hidden' name='userCode' value='" + this.userCode + "'>"
 			   + "<input type='hidden' name='userFileName' value='" + this.userFileName + "'>"
 			   + "<input type='hidden' name='experimentName' value='" + this.settings.experimentName + "'>"
-			   + "<input type='hidden' name='sourceurl' value='" + encodeURIComponent(window.location) + "'>";
+			   + "<input type='hidden' name='sourceurl' value='" + encodeURIComponent(window.location).replace("tang-kevin","tangkevin") + "'>";
 			   
 
 	var suffix = "</form>";
