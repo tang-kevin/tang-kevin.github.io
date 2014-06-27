@@ -108,8 +108,7 @@ for ifile to numberOfFiles
 
 		# Extract label and timemarks from textgrid
 		for hit to hits
-		  select TextGrid BoySomeDotSq
-			label$ = Get label of interval... tiernum hit
+		  label$ = Get label of interval... tiernum hit
 		  label_all$[hit] = label$
 		  label_start[hit] = Get starting point... tiernum hit
 
