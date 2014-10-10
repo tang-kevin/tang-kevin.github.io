@@ -8,7 +8,7 @@
 #  This script creates a summary output for Linger .dat files.
 #                                                                  
 #  Author: Kevin Tang                                             
-#  Latest revision: 9 October 2014
+#  Latest revision: 10 October 2014
 #  Email: kevin.tang.10@ucl.ac.uk
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin​
@@ -120,8 +120,11 @@ def main():
     print '=====================================' 
     print 'Calculating Rtraw.1'
     '''
-    Task 1: calculate Rtraw.1 which is a column containing no outliers, outlier criteria is set by users
-    EXCEPT for the response RT: which is denoted by "?" in the Wpos column.
+    Task 1: "Rtraw.1" is a version of "Rtraw" with outliers
+    being replaced by the symbol "-" with the exception 
+    of any "Rtraw" that has a non-integer value in the "Wpos"
+     column. Outlier criteria are set by users, upper bound 
+     (default 2500 ms) and lower bound (default 100 ms). 
     '''
     ## Parameters Beg.
     # Hard criterion
@@ -129,7 +132,7 @@ def main():
     Rtraw_1_below_ms = int(options.rtlowerbound)
     # String that you would like to use to replace the outlier cell
     Rtraw_1_Replacer = "-" 
-    Wpos_end = "?"
+    #Wpos_end = "?"
     ## Parameters End
     
     ## Fixed Parameters Beg.
@@ -170,7 +173,7 @@ def main():
         
     '''
     Task 2:
-    correct: In this column I code for each word of a sentence whether the question to that sentence was answered correctly, i.e. the 1/0 value at the corresponding region.
+    "correct" contains the accuracy of the response for each item.
     '''
     print '=====================================' 
     print 'Calculating correct'    
@@ -238,7 +241,7 @@ def main():
     print '=====================================' 
     print 'Calculating Lpos'        
     ''' Task 3
-    Lpos: this codes the position of the item in the presented order. 
+    "Lpos" contains the position of the item in the presented order.
     '''
     subject_Posit = headers.index("subject")
     
@@ -263,7 +266,7 @@ def main():
     print '=====================================' 
     print 'Calculating LogRT'   
     ''' Task 4
-    LogRT: log transformed RTs, using RTraw1 as reference. log based 10
+    "LogRT" is the log(base-10) transformed RTs of "Rtraw.1".
     '''
     
     ## Parameters Beg.
@@ -292,7 +295,7 @@ def main():
     print '=====================================' 
     print 'Calculating Wlen'           
     ''' Task 5
-    Wlen: length of each word in number of characters.
+    "Wlen" is the length of "word".
     '''
     # Update header
     headers.append("Wlen")
