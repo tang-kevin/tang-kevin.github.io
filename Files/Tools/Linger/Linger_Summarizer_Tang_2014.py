@@ -128,7 +128,7 @@ def main():
     Rtraw_1_above_ms = int(options.rtupperbound)
     Rtraw_1_below_ms = int(options.rtlowerbound)
     # String that you would like to use to replace the outlier cell
-    Rtraw_1_Replacer = "?" 
+    Rtraw_1_Replacer = "-" 
     Wpos_end = "?"
     ## Parameters End
     
@@ -268,7 +268,7 @@ def main():
     
     ## Parameters Beg.
     # symbol for when RTraw1 is not log-able, e.g. if it's not a number
-    LogRT_NA = '?'
+    LogRT_NA = '-'
     ## Paremters End
     
     # Update header
@@ -321,7 +321,7 @@ def main():
         print '====================================='           
         print 'Please cite:'
         print 'Tang, K. (2014). Linger Toolkit. http://tang-kevin.github.io/Tools.html.'         
-        
+        print '=====================================' 
 if __name__ == '__main__':
     main()
     
