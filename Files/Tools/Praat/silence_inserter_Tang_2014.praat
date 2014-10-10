@@ -1,5 +1,5 @@
 ####################################################################
-#  Silence Inserter        
+#  Silence Inserter  (Part of ``Praat Toolkit'' by Kevin Tang)      
 ####################################################################
 #  Function:                                                       
 #  This script inserts a silence between two adjacent labels in a   
@@ -10,6 +10,9 @@
 #  Email: kevin.tang.10@ucl.ac.uk
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin​
+#
+#  Please cite:
+#  Tang, K. (2014). Praat Toolkit. http://tang-kevin.github.io/Tools.html.
 #
 #  # Requires Praat v 5.2.03+
 #  
@@ -232,6 +235,9 @@ select Strings list
 Remove
 
 appendInfo: "All done!", newline$
-appendInfo: "Thank you for using ''Silence Inserter''", tab$, "by Kevin Tang", newline$
+appendInfo: "========================", newline$
+appendInfo: "Please cite:", newline$
+appendInfo: "Tang, K. (2014). Praat Toolkit. http://tang-kevin.github.io/Tools.html.", newline$
+appendInfo: "========================", newline$
 appendInfo: "For other linguistic tools, please visit:", newline$
 appendInfo: "http://tang-kevin.github.io", newline$
