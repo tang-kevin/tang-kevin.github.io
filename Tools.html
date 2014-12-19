@@ -100,9 +100,21 @@ $(document).ready(function () {
     <li>Column 12 "LogRT" is the log(base-10) transformed RTs of "Rtraw.1".</li>
     <li>Column 13 "Wlen" is the length of "word".</li>
     </ul>
-    <br><br>
-
-    <b>Linger-Subjectizer</b>: An R script that filters subjects based on multiple methods (Coming soon) <br>
+    <br>
+    <b>Linger-Filter</b>: An R script that filters a summarised linger text file data by mean and std calculated on multiple variables</b>. [<a href="Files/Tools/Linger/Linger-Filter_Tang_2014.R" download>Download</a>]<br>
+    <i>Description:</i>  <br>
+    This script allows the user to filter a variable, called it VarX (e.g. logRT or Correct) by a subset of one or more variables. For instance, one might want to filter RT by-subject, by-condition and by region, the "grouping variables" here would be subject, condition and region. The filtering strategy is as followed: 1) The mean and standard deviation of VarX are calculated for each unique combination of the grouping variables. 2) VarX above or below N times the standard deviation from the mean are filtered.<br>
+    How to use: 
+    Open the script in R, complete the user specification section (see below for detail), save the script and finally run the whole script.
+    <ul>The user specification would ask you for:
+    <li> Your working directory
+    <li> The name of your summarised linger text file
+    <li> The delimiter of the text file
+    <li> The name of the output filtered text file
+    <li> The threshold of the filter? (how many std above or below the mean)
+    <li> The names of the grouping variables
+    <li> The name of the filtering variable
+    </ul>
 
     <br>
     <b>Citation</b>:<br>
