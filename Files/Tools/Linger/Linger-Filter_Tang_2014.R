@@ -11,7 +11,7 @@
 #  2) VarX above or below n times the standard deviation from the mean are filtered
 #                                                             
 #  Author: Kevin Tang                                             
-#  Latest revision: 19 December 2014
+#  Latest revision: 8 January 2015
 #  Email: kevin.tang.10@ucl.ac.uk
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin
@@ -51,9 +51,18 @@
 #  Instructions:
 #  1) Complete the User specifications section, Save the script
 #  2) Run the whole script
+#
+#  ## Version control ## 
+#  - Version 1.0: 19 December 2014. First release
+#  - Version 1.1: 8 January 2015. If any of the columns in col.names.grouping and 
+#  col.name.VarX, contain NA (i.e. empty cells), then these rows
+#  will not be filtered.
 ####################################################################
+
+version = '1.1'
 print("=====================")
 print("Welcome to Linger-Filter (Part of ``Linger Toolkit'' by Kevin Tang)")
+print(paste('Version:',version, sep=' '))
 # Store the variables in memory before the script was executed, these
 # will be restored when the script is completed
 save(list=ls(), file="temp.variables")
@@ -67,7 +76,6 @@ if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
 }
  
 library(reshape2)
-
 
 
 ####################################################################
@@ -124,6 +132,7 @@ print("======Done=======")
 # Read summary file
 print(paste("Read text file:",input.txt.name, sep =' '))
 data = read.table(input.txt.name,sep=input.txt.sep,header=TRUE)
+
 data.original.header = names(data)
 print("======Done=======")
 print("Check if all grouping variables are found in the text file")
@@ -146,7 +155,6 @@ print("======Done=======")
 
 # calculate the number of grouping variables
 group.num = length(col.names.grouping)
-
 
 print("Calculate mean and std by grouping variables")
 
@@ -209,21 +217,25 @@ print("Filtering the text file")
 for (i in 1:nrow(data)) {
 
   idx = match(group.data.values[i],groupings.values)
-  
-  VarX.temp = data.VarX[i,]
-  upper = data.upper[idx,]
-  lower = data.lower[idx,]
-  filter.temp = 0
-  if (VarX.temp > upper) {
-    filter.temp = 1
+  if (!is.na(idx)) {
+    VarX.temp = data.VarX[i,]
+    upper = data.upper[idx,]
+    lower = data.lower[idx,]
+    filter.temp = 0
+    if (VarX.temp > upper) {
+      filter.temp = 1
+    }
+    if (VarX.temp < lower) {
+      filter.temp = 1
+    }
+    filter[i] = filter.temp
+    upper.lim[i] = upper
+    lower.lim[i] = lower
+  } else {
+    filter[i] = 0 # 0 being not filter
+    upper.lim[i] = NA
+    lower.lim[i] = NA
   }
-  if (VarX.temp < lower) {
-    filter.temp = 1
-  }
-  filter[i] = filter.temp
-  upper.lim[i] = upper
-  lower.lim[i] = lower
-  
   # update progress bar
   setTxtProgressBar(pb, i)
 }
