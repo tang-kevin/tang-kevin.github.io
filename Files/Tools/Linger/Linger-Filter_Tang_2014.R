@@ -94,8 +94,11 @@ input.txt.name = "summary.csv"
 # What is the delimiter of the summary text file? (Default: "\t")
 input.txt.sep = '\t'
 
-# What is the name of the output text file?
+# What is the name of the output filtered text file?
 output.txt.name = "summary.filtered.csv"
+
+# What is the name of the output outlier text file?
+output.outliers.txt.name = "summary.outliers.csv"
 
 # What is your threshold of the fitler? (Default: 2.5)
 filter.threshold = 2.5 # e.g. 2.5 std above or below the mean
