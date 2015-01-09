@@ -60,15 +60,14 @@
 #  - Version 1.2: 9 January 2015. Avoid warnings() due to calculating means and sds
 #  non-numeric cells (although no relevant) by creating "data.relevant" for computation
 #  - Version 1.3: 9 January 2015. Writing out outliers to a file as well.
+#  - Version 1.4: 9 January 2015. Remove restore pre-script variables function.
 ####################################################################
 
-version = '1.3'
+version = '1.4'
 print("=====================")
 print("Welcome to Linger-Filter (Part of ``Linger Toolkit'' by Kevin Tang)")
 print(paste('Version:',version, sep=' '))
-# Store the variables in memory before the script was executed, these
-# will be restored when the script is completed
-save(list=ls(), file="temp.variables")
+
 # Clear all
 rm(list=ls()) 
 
@@ -282,9 +281,7 @@ write.table(data.outliers, output.outliers.txt.name,
 
 print("======Done=======")
 
-# Restore variables before the script was executed
-load("temp.variables")
-file.remove("temp.variables")
+
 print("=====================")
 print("====End processing===")
 print("=====================")
