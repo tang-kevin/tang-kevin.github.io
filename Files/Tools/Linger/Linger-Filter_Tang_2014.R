@@ -59,9 +59,10 @@
 #  will not be filtered.
 #  - Version 1.2: 9 January 2015. Avoid warnings() due to calculating means and sds
 #  non-numeric cells (although no relevant) by creating "data.relevant" for computation
+#  - Version 1.3: 9 January 2015. Writing out outliers to a file as well.
 ####################################################################
 
-version = '1.2'
+version = '1.3'
 print("=====================")
 print("Welcome to Linger-Filter (Part of ``Linger Toolkit'' by Kevin Tang)")
 print(paste('Version:',version, sep=' '))
@@ -74,9 +75,9 @@ rm(list=ls())
 # load library, if not exist, then install automatically
 packages <- c("reshape2")
 if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
- install.packages(setdiff(packages, rownames(installed.packages())))  
+  install.packages(setdiff(packages, rownames(installed.packages())))  
 }
- 
+
 library(reshape2)
 
 
@@ -194,7 +195,7 @@ lower.lim = NULL
 #eval.idx <- function(group.data, data.mean, i, group.num) {
 #index.bool = NULL
 #for (ii in 1:nrow(data.mean)) {
-  
+
 #  index.bool[ii] = all(group.data[i,] == data.mean[ii,1:group.num])
 #}
 #return(index.bool)
@@ -219,7 +220,7 @@ pb <- txtProgressBar(min = 0, max = total, style = 3)
 
 print("Filtering the text file")
 for (i in 1:nrow(data)) {
-
+  
   idx = match(group.data.values[i],groupings.values)
   if (!is.na(idx)) {
     VarX.temp = data.VarX[i,]
@@ -253,13 +254,22 @@ data$filter.lgtk = filter
 
 # Filter
 data.filtered = subset(data, filter.lgtk == 0)
+data.outliers = subset(data, filter.lgtk == 1)
 #data.filtered = data
 
 # Keep only the original columns
 data.filtered = subset(data.filtered, select = data.original.header)
+data.outliers = subset(data.outliers, select = data.original.header)
 
 print(paste("Write filtered data to a new file:",output.txt.name,sep=' '))
 write.table(data.filtered, output.txt.name,
+            sep=input.txt.sep,
+            row.names=FALSE,
+            col.names=TRUE,
+            quote = FALSE)
+
+print(paste("Write outliers data to a new file:",output.outliers.txt.name,sep=' '))
+write.table(data.outliers, output.outliers.txt.name,
             sep=input.txt.sep,
             row.names=FALSE,
             col.names=TRUE,
