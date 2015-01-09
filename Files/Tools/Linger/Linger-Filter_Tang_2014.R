@@ -11,7 +11,7 @@
 #  2) VarX above or below n times the standard deviation from the mean are filtered
 #                                                             
 #  Author: Kevin Tang                                             
-#  Latest revision: 8 January 2015
+#  Latest revision: 9 January 2015
 #  Email: kevin.tang.10@ucl.ac.uk
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin
@@ -57,9 +57,11 @@
 #  - Version 1.1: 8 January 2015. If any of the columns in col.names.grouping and 
 #  col.name.VarX, contain NA (i.e. empty cells), then these rows
 #  will not be filtered.
+#  - Version 1.2: 9 January 2015. Avoid warnings() due to calculating means and sds
+#  non-numeric cells (although no relevant) by creating "data.relevant" for computation
 ####################################################################
 
-version = '1.1'
+version = '1.2'
 print("=====================")
 print("Welcome to Linger-Filter (Part of ``Linger Toolkit'' by Kevin Tang)")
 print(paste('Version:',version, sep=' '))
@@ -76,6 +78,7 @@ if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
 }
  
 library(reshape2)
+
 
 
 ####################################################################
@@ -160,10 +163,11 @@ print("Calculate mean and std by grouping variables")
 
 # calculate mean and std by grouping variables
 group.data = data[data.original.header %in% col.names.grouping]
+data.relevant = data[data.original.header %in% c(col.names.grouping, col.name.VarX)]
 groupinglist= as.list(group.data)
 
-data.mean <-aggregate(data, by=groupinglist, FUN=mean, na.rm=FALSE)
-data.sd <-aggregate(data, by=groupinglist,FUN=sd, na.rm=FALSE)
+data.mean <-aggregate(data.relevant, by=groupinglist, FUN=mean, na.rm=FALSE)
+data.sd <-aggregate(data.relevant, by=groupinglist,FUN=sd, na.rm=FALSE)
 
 data.mean.VarX = data.mean[names(data.mean) == col.name.VarX[1]]
 data.sd.VarX = data.sd[names(data.sd) == col.name.VarX[1]]
