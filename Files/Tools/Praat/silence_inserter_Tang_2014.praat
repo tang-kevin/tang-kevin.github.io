@@ -7,12 +7,12 @@
 #                                                                  
 #  Author: Kevin Tang                                             
 #  Latest revision: 14 June 2014
-#  Email: kevin.tang.10@ucl.ac.uk
+#  Email: kevtang@gmail.com
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin​
 #
 #  Please cite:
-#  Tang, K. (2014). Praat Toolkit. http://tang-kevin.github.io/Tools.html.
+#  Tang, K. (2014-2015). Praat Toolkit. http://tang-kevin.github.io/Tools.html.
 #
 #  # Requires Praat v 5.2.03+
 #  
@@ -237,7 +237,7 @@ Remove
 appendInfo: "All done!", newline$
 appendInfo: "========================", newline$
 appendInfo: "Please cite:", newline$
-appendInfo: "Tang, K. (2014). Praat Toolkit. http://tang-kevin.github.io/Tools.html.", newline$
+appendInfo: "Tang, K. (2014-2015). Praat Toolkit. http://tang-kevin.github.io/Tools.html.", newline$
 appendInfo: "========================", newline$
 appendInfo: "For other linguistic tools, please visit:", newline$
 appendInfo: "http://tang-kevin.github.io", newline$
