@@ -4,7 +4,7 @@
 #  Function:                                                       
 #  This script calculates the mean formant values (F1,F2,F3) of each labelled segment in each pair of Sound and TextGrid files (which have to have the same name). The mean formant values are calculated over a region of the label, e.g. the beginning (20-30%) of a diphthong
 #  Author: Kevin Tang                                             
-#  Latest revision: 2nd August 2015
+#  Latest revision: 12th August 2015
 #  Email: kevtang@gmail.com
 #  http://tang-kevin.github.io
 #  Twitter: http://twitter.com/tang_kevin​
@@ -22,9 +22,14 @@
 #  Starting Percentage of the labelled segment
 #  Ending Percentage of the labelled segment
 #  ... (Other default parameters for formant extraction)
-# 
+#
+#  NOTE: All the sound files should each have a textgrid file. Otherwise the script will try to process the sound files without the textgrid and you might experience the interface "flashing". This should not affect the results of the sound files that have a textgrid file.
+#   
 #  Output:
 #  A textfile with the extracted mean formants
+#
+#  Revisions: 
+#  12th August 2015: Fixed the GUI with units, better documentation
 #
 ####################################################################
 
@@ -46,13 +51,13 @@ form Extract mean formant values of labeled segments of each file
 	comment Which tier number do you want to read?
 	positive Tier 1
 	comment Parameters for formant analysis
-	positive Percentage_start 20
-	positive Percentage_end 30
-	positive Time_step 0.01
-	integer Maximum_number_of_formants 5
-	positive Maximum_formant_(Hz) 5500_(=adult female)
-	positive Window_length_(s) 0.025
-	real Preemphasis_from_(Hz) 50
+	positive Percentage_start_(%) 20
+	positive Percentage_end_(%) 30
+	positive Time_step_(s) 0.01_(=default)
+	integer Maximum_number_of_formants 5_(=default)
+	positive Maximum_formant_(Hz) 5500_(=default)
+	positive Window_length_(s) 0.025_(=default)
+	real Preemphasis_from_(Hz) 50_(=default)
 endform
 
 Create Strings as file list... list 'sound_directory$'*'sound_file_extension$'
