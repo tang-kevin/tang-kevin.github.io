@@ -19,33 +19,33 @@ box-shadow: -5px -5px #888;
 box-shadow: 0 0 5px #888;
 }
 
-#image-container { 
-  min-width:782px; /* width of 3 images (746px) plus images' padding and border (36px) */ 
-  padding:10px; 
-  border:1px solid #d3d2d2; 
-  background-color:#f0f0f0; 
- } 
-#image-container img { 
-  padding:5px; 
-  border:1px solid #d3d2d2; 
-  background-color:#fff;  
- } 
-#image-right { 
-  float:right; 
-  width:250px; 
-  height:49px; 
- } 
-#image-left { 
-  float:left; 
-  width:250px; 
-  height:36px; 
- } 
-#image-center { 
-  display:block; 
-  width:246px; 
-  height:59px; 
-  margin:auto; 
- } 
+#image-container {
+  min-width:782px; /* width of 3 images (746px) plus images' padding and border (36px) */
+  padding:10px;
+  border:1px solid #d3d2d2;
+  background-color:#f0f0f0;
+ }
+#image-container img {
+  padding:5px;
+  border:1px solid #d3d2d2;
+  background-color:#fff;
+ }
+#image-right {
+  float:right;
+  width:250px;
+  height:49px;
+ }
+#image-left {
+  float:left;
+  width:250px;
+  height:36px;
+ }
+#image-center {
+  display:block;
+  width:246px;
+  height:59px;
+  margin:auto;
+ }
 
 </style>
 
@@ -82,12 +82,12 @@ $(document).ready(function () {
 <script src="scripts/html5shiv.min.js"></script>
 <![endif]-->
 <script language="javascript">
-    function changeTextToAAA(id) 
+    function changeTextToAAA(id)
     {
         document.getElementById(id).innerHTML = '[Show]';
     }
 
-    function changeTextToBBB(id) 
+    function changeTextToBBB(id)
     {
         document.getElementById(id).innerHTML = '[Hide]';
     }
@@ -144,12 +144,12 @@ for (i=0; i<selectedComponents.length-1; i++)
 document.getElementById(selectedComponents[i]).style.display="block"
 }
 
-function get_cookie(Name) { 
+function get_cookie(Name) {
 var search = Name + "="
 var returnvalue = "";
 if (document.cookie.length > 0) {
 offset = document.cookie.indexOf(search)
-if (offset != -1) { 
+if (offset != -1) {
 offset += search.length
 end = document.cookie.indexOf(";", offset);
 if (end == -1) end = document.cookie.length;
@@ -183,7 +183,7 @@ function do_onload(){
 uniqueidn=window.location.pathname+"firsttimeload"
 getElementbyClass("switchcontent")
 if (enablepersist=="on" && typeof ccollect!="undefined"){
-document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0"
 firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
 if (!firsttimeload)
 revivecontent()
@@ -234,15 +234,15 @@ window.onunload=saveswitchstate
     <!-- ################################################################################################ -->
     <div id="content">
       <!-- ########################################################################################## -->
-      
+
 <!--<p class="center"><img src="images/CV/Tang_Kevin_CV_head.JPG" alt="CV Profile Picture" width="42" height="42"></p>-->
  <h7 id="top"></a>
 
-<div class="imgholder"> 
+<div class="imgholder">
  <!-- <img id="image-left" src="mgm_mirage_logo.jpg" alt=""> -->
-  <img id="imgl" src="images/CV/Inno finalists logo.jpg" alt="" style="width:20% !important;"> 
+  <img id="imgl" src="images/CV/Inno finalists logo.jpg" alt="" style="width:20% !important;">
   <img id="imgr" src="images/profile_color.jpg" alt="" style="width:20% !important;">
-</div> 
+</div>
 
 <!-- <div class="imgholder"><div class="imgl"><img src="images/CV/Tang_Kevin_CV_head.JPG" alt="" width="50%" height="50%"></div><div class="imgr"><img src="images/CV/Inno finalists logo.jpg" alt="" width="50%" height="50%"></div></div>-->
       <section><p style = "text-align:center;font-size:1.3em;">PhD (UCL), MEng (Hons), MA (Cantab & UCL), CMALT</p></section>
@@ -250,75 +250,71 @@ window.onunload=saveswitchstate
       <section>
 
         <a href="javascript:changeTextToAAA('Example_A');"></a>
-         
+
         <h1 id="CurrentPosition">Current position</h1>
         <h7 onClick="expandcontent('sc1000')" style="cursor:hand; cursor:pointer"><div id="Example_A">July 2015 - Present</div></h7>
-        <div id="sc1000" class="switchcontent" style="display:block"> 
+        <div id="sc1000" class="switchcontent" style="display:block">
         Postdoctoral Associate, Yale University (working with <a href="http://pantheon.yale.edu/~rtb27/" target="_blank">Prof. Ryan Bennett</a>)
         </div>
         <h1 id="Education">Education</h1>
         <h7 onClick="expandcontent('sc1')" style="cursor:hand; cursor:pointer"><div id="Example_A">October 2011 - August 2015</div></h7>
-        <div id="sc1" class="switchcontent" style="display:block">        
+        <div id="sc1" class="switchcontent" style="display:block">
         PhD Candidate in Linguistics, University College London, London, United Kingdom<br>
         Thesis title: Naturalistic Speech Misperception<br>
         Primary supervisor: <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a><br>
         Secondary supervisor: <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/stuart-rosen" target ="_blank">Prof. Stuart Rosen</a>
-        
+
         <p>
         Tang, Kevin (2015). "Naturalistic Speech Misperception". PhD thesis. University College London.
-        [<a href="Files/Tang.Kevin.2015.PhDThesis.Naturalistic.Speech.Misperception.Slips.Ear.pdf" target ="_blank">pdf</a>] [<a href="Files/Tang2015_PhDThesis.bib" target ="_blank">bib</a>] 
+        [<a href="Files/Tang.Kevin.2015.PhDThesis.Naturalistic.Speech.Misperception.Slips.Ear.pdf" target ="_blank">pdf</a>] [<a href="Files/Tang2015_PhDThesis.bib" target ="_blank">bib</a>]
         </p>
         <p><font color="#B00000">Read more about this research:</font> [<a href="Research.html#slipsear">Here</a>]</p>
         </div>
         <h7 onClick="expandcontent('sc2')" style="cursor:hand; cursor:pointer"><div id="Example_A">2010-2011</div></h7>
-        <div id="sc2" class="switchcontent" style="display:block">        
+        <div id="sc2" class="switchcontent" style="display:block">
         M.A. in Linguistics, University College London, London, United Kingdom <br>
         Class: Distinctions (Dissertation and all modules)
-        </div>        
+        </div>
         <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">2009-2010</div></h7>
-        <div id="sc3" class="switchcontent" style="display:block">        
+        <div id="sc3" class="switchcontent" style="display:block">
         M.Eng. in Engineering, University of Cambridge, Cambridge, United Kingdom <br>
         Class: Honours Pass (Dissertation: Honours with Merit; Modules: Honours Pass)
-        </div>  
+        </div>
         <h7 onClick="expandcontent('sc4')" style="cursor:hand; cursor:pointer"><div id="Example_A">2006-2009</div></h7>
-        <div id="sc4" class="switchcontent" style="display:block">        
+        <div id="sc4" class="switchcontent" style="display:block">
         B.A. in Engineering, University of Cambridge, Cambridge, United Kingdom <br>
         Class: 2.i.
-        </div>  
+        </div>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
         <h1 id="Publications">Publications</h1>
-        <h7 onClick="expandcontent('sc50')" style="cursor:hand; cursor:pointer"><div id="Example_A">2015</div></h7>
-        <div id="sc50" class="switchcontent" style="display:block">
-        <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.*</a>, <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4799803T4&idiomaExibicao=2" target ="_blank">Rodrigues C.*</a>, and Tang K.* (2015). (*=Equal contribution authorship.) The rise and fall of the L-shaped morphome: diachronic and experimental studies. <i>Probus: International Journal of Latin and Romance Linguistics</i>, 27(-), pp. -. <a href="http://dx.doi.org/10.1515/probus-2015-0002" target ="_blank">http://dx.doi.org/10.1515/probus-2015-0002</a> [<a href="Files/NevinsRodriguesTang2015_Morphome(Ahead of print Mar 2015).pdf" target ="_blank">pdf</a>] [<a href="Files/NevinsRodriguesTang2015_Morphome.bib" target ="_blank">bib</a>] 
-        </div> 
-        <h7 onClick="expandcontent('sc51')" style="cursor:hand; cursor:pointer"><div id="Example_A">2014</div></h7>
-        <div id="sc51" class="switchcontent" style="display:block">         
+        <hr style="border: none; height: 5px; color: #C8C8C8; background: #C8C8C8;"/>
+        <h2 id="Journal_Pub_Acc">Journal articles (published or accepted)</h2>
+        <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">2015</div></h7>
 
-        Tang, K., <a href="http://www.f.waseda.jp/dechene/" target ="_blank">de Chene, B.</a> (Forthcoming, 2014) A New Corpus of Colloquial Korean and its Applications. <i><a href="http://www.ninjal.ac.jp/labphon14/" target ="_blank">Proceedings of Laboratory Phonology 14</a></i>, Tachikawa, Tokyo, Japan. [<a href="Files/Tang_DeChene_LP14Abst.pdf" target ="_blank">abstract</a>] [<a href="./Files/Tang_deChene_LabPhon14_v4.1.Final.pdf" target ="_blank">poster</a>]
-
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/> 
+        <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.*</a>, <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4799803T4&idiomaExibicao=2" target ="_blank">Rodrigues C.*</a>, and Tang K.* (2015). (*=Equal contribution authorship.) The rise and fall of the L-shaped morphome: diachronic and experimental studies. <i>Probus: International Journal of Latin and Romance Linguistics</i>, 27(-), pp. -. <a href="http://dx.doi.org/10.1515/probus-2015-0002" target ="_blank">http://dx.doi.org/10.1515/probus-2015-0002</a> [<a href="Files/NevinsRodriguesTang2015_Morphome(Ahead of print Mar 2015).pdf" target ="_blank">pdf</a>] [<a href="Files/NevinsRodriguesTang2015_Morphome.bib" target ="_blank">bib</a>]
+        <h2 id="Journal_In_Rev">Journal articles (under review or in revision)</h2>
+        <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">Under Review</div></h7>
+        Howell, P. , Tang, K. , Tuomainen, O., Chan, S.K. , Beltran, K. , Mirawdeli, A. and Harris, J. (Under Review) Identification of Speech Difficulty in Samples of Children with Diverse Language Backgrounds. <i>International Journal of Language and Communication Disorders</i>
+        <h2 id="Proceedings">Proceedings</h2>
+        <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">2014</div></h7>
         Tang, K., & <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a> (2014) Measuring Segmental and Lexical Trends in a Corpus of Naturalistic Speech. <i>Proceedings of the 43rd Meeting of the North East Linguistic Society</i>. Ed. by H.-L. Huang, E. Poole, and A. Rysling. Vol. 2. GLSA (Graduate Linguistics Student Association), pp. 153–166. [<a href="Files/Tang_Nevins_2014_Trend_Misperception_NELS43_Authors_Version.pdf" target ="_blank">pdf</a>] [<a href="Files/TangNevin2014_Measuring.bib" target ="_blank">bib</a>]
-        </div>          
-        <h7 onClick="expandcontent('sc5')" style="cursor:hand; cursor:pointer"><div id="Example_A">2013</div></h7>
-        <div id="sc5" class="switchcontent" style="display:block">
+        <h2 id="Working_Papers">Working Papers</h2>
+        <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">2013</div></h7>
         Tang, K., & <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a> (2013) Quantifying the Diachronic Productivity of Irregular Verbal Patterns in Romance.  <i>UCL Working Papers in Linguistics 25</i>. [For the latest version: <a href="http://ling.auf.net/lingbuzz/001969" target ="_blank">pdf</a>] [<a href="Files/Tang_Nevins2013_Romance.bib" target ="_blank">bib</a>]<br>
-        </div> 
-        <h7 onClick="expandcontent('sc6')" style="cursor:hand; cursor:pointer"><div id="Example_A">2012</div></h7>
-        <div id="sc6" class="switchcontent" style="display:block">       
+        <h7 onClick="expandcontent('sc3')" style="cursor:hand; cursor:pointer"><div id="Example_A">2012</div></h7>
         Tang, K. (2012) A 61 Million Word Corpus of Brazilian Portuguese Film Subtitles as a Resource for Linguistic Research. <i>UCL Working Papers in Linguistics 24</i>. [<a href="http://www.ucl.ac.uk/pals/research/linguistics/publications/wpl/12papers/Tang-UCLWPL" target ="_blank">pdf</a>] [<a href="Files/Tang2012_Brazilian.bib" target ="_blank">bib</a>] [<a href="Tools.html" target ="_blank">tools</a>]
-        </div>   
+
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
 
         <h1 id="Outreach">Outreach</h1>
 	    <h7 onClick="expandcontent('sc77')" style="cursor:hand; cursor:pointer"><div id="Example_A">2015</div></h7>
-        <div id="sc77" class="switchcontent" style="display:block">  
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <div id="sc77" class="switchcontent" style="display:block">
         Carmo, M. C., & Tang, K. (2015) Alternância, `auternância' ou `arternância': variação dos sons da fala. Diário da Região, p. 4C – 4C. 28 Feburary 2015 [<a href="Files/Outreach/Diario_20150228_MCarmo_KTang.jpg" target ="_blank">jpg</a>]
-        </div>   
+        </div>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
-        <h1 id="Conferences:Talks">Conferences: Talks</h1>   
+        <h1 id="Conferences:Talks">Conferences: Talks</h1>
         <h7 onClick="expandcontent('sc18')" style="cursor:hand; cursor:pointer"><div id="Example_A">2016</div></h7>
-        <div id="sc18" class="switchcontent" style="display:block">  
+        <div id="sc18" class="switchcontent" style="display:block">
 
 		<a href="http://campuspress.yale.edu/ryanbennett/" target ="_blank">Bennett, R.</a>, Tang, K. Modelling Phonetic and Phonological Variation with 'Small' Data: Evidence from Kaqchikel Mayan.<a href="http://labphon.org/labphon15" target ="_blank">The 15th Laboratory Phonology Conference (LabPhon15)</a> Manchester, United Kingdom. July 2016
         <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
@@ -337,120 +333,125 @@ window.onunload=saveswitchstate
 
 
         <h7 onClick="expandcontent('sc7')" style="cursor:hand; cursor:pointer"><div id="Example_A">2014</div></h7>
-        <div id="sc7" class="switchcontent" style="display:block">  
+        <div id="sc7" class="switchcontent" style="display:block">
         Tang, K., <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/john-harris" target ="_blank">Harris, J.</a> A Functional Load Account of Geminate Contrastiveness: A Meta-Study. <a href="http://www.lagb.org.uk/lagb2014/" target ="_blank">2014 Annual Meeting of the Linguistics Association of Great Britain</a> University of Oxford. September 2014
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>          
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
 
         Tang, K. Using Subtitle Corpora to Model Aspects of Spoken Language. <a href="http://www.port.ac.uk/corpus-linguistics/corpus-linguistics-in-the-south/" target ="_blank">Corpus Linguistics in the South 7: Spoken Language</a> University College London. May 2014
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>    
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         Tang, K., Lou, Y. Mandarin Chinese Speech Perception in Noise: Phonological Implications. <a href="http://www.phonology.eu/OCP/" target ="_blank">The 11th Old World Conference in Phonology (OCP11)</a>, Amsterdam-Leiden, The Netherlands. January 2014.
-        </div>           
+        </div>
         <h7 onClick="expandcontent('sc8')" style="cursor:hand; cursor:pointer"><div id="Example_A">2013</div></h7>
-        <div id="sc8" class="switchcontent" style="display:block">        
-        Tang, K, <a href="http://www.ucl.ac.uk/pals/research/linguistics/People/studentprofiles/s_green" target ="_blank">Green, S.</a>, Anyadi, S. When interdisciplinarity assists peer-learning: PeerWise at UCL. <a href="http://www.heacademy.ac.uk/events/detail/2013/5_Nov_2013_HEA_STEM_InterDis_BBC" target ="_blank">Higher Education Academy (HEA) STEM</a>: Interdisciplinary show case, BBC Broadcast Centre, London, United Kingdom. November 2013. [<a href="http://prezi.com/lrwaetfevogu/stem-hea-presentation/?utm_campaign=share&utm_medium=copy" target ="_blank">Slides</a>] 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>         
+        <div id="sc8" class="switchcontent" style="display:block">
+        Tang, K, <a href="http://www.ucl.ac.uk/pals/research/linguistics/People/studentprofiles/s_green" target ="_blank">Green, S.</a>, Anyadi, S. When interdisciplinarity assists peer-learning: PeerWise at UCL. <a href="http://www.heacademy.ac.uk/events/detail/2013/5_Nov_2013_HEA_STEM_InterDis_BBC" target ="_blank">Higher Education Academy (HEA) STEM</a>: Interdisciplinary show case, BBC Broadcast Centre, London, United Kingdom. November 2013. [<a href="http://prezi.com/lrwaetfevogu/stem-hea-presentation/?utm_campaign=share&utm_medium=copy" target ="_blank">Slides</a>]
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         <a href="http://www.ucl.ac.uk/pals/research/linguistics/People/studentprofiles/s_green" target ="_blank">Green, S.</a>, Tang, K. The Importance of Peer-Learning: A Case Study on PeerWise. <a href="http://www.k4all.org/Internet_of_Education/" target ="_blank">The 1st Internet of Education conference</a>, Knowledge 4 All Foundation Ltd (K4A) and the Artificial Intelligence Lab, Jo&#382;ef Stefan Institute. Ljubljana, Slovenia. November 2013. [<a href="Files/internetofeducation2013_green_tang_peerwise_01.pdf" target ="_blank">pdf</a>] [<a href="http://videolectures.net/internetofeducation2013_green_tang_peerwise/" target ="_blank">video</a>]
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>   
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         Tang, K., <a href="http://crr.ugent.be/members/pawel-mandera" target ="_blank">Mandera, P.</a>, <a href="http://crr.ugent.be/members/emmanuel-keuleers" target ="_blank">Keuleers, E.</a> The OpenLexicons Project - Development and Uses of Subtlex-Corpora for Investigating Sound Symbolism and Brazilian Portuguese. <a href="http://www.networds-esf.eu/index.php?mact=News,cntnt01,detail,0&cntnt01articleid=1&cntnt01returnid=15" target ="_blank">3rd NetWordS Workshop</a>, Dubrovnik - Centre for Advanced Academic Studies, Croatia. September 2013. [Short Visit Grant received by NetWordS - 09-RNP-089]
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>   
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
 
 
         Tang, K., <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a>, <a href="http://www.phonologist.org/" target ="_blank">Becker, M.</a> A 61 Million Word Corpus of Brazilian Portuguese Film Subtitles as a Resource for Linguistic Research: Investigating the (Non-)Role of Token Frequency on Phonology. The 1st PARLAY Conference (PostgraduateAcademic Researchers in Linguistics At York), University of York, York, United Kingdom. September 2013.
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>   
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         Tang, K., <a href="http://www.ucl.ac.uk/pals/research/linguistics/People/studentprofiles/s_green" target ="_blank">Green, S.</a> Implementing a peer learning tool at UCL - Peerwise. UCL: Summits and Horizons: Using technology to give better and faster feedback. University College London, London, United Kingdom. 15 May 2013
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>   
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         Tang, K., <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a>, <a href="http://www.phonologist.org/" target ="_blank">Becker, M.</a>. Prosody drives alternations: evidence from a 51 Million Word Corpus of Brazilian Portuguese. <a href="http://www.ocp10.boun.edu.tr/" target ="_blank">The 10th Old World Conference in Phonology (OCP 10)</a>, Istanbul, Turkey. January 2013.
-        </div>   
-
+        </div>
         <h7 onClick="expandcontent('sc9')" style="cursor:hand; cursor:pointer"><div id="Example_A">2012</div></h7>
-        <div id="sc9" class="switchcontent" style="display:block">        
+        <div id="sc9" class="switchcontent" style="display:block">
         Tang, K., & <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a> Naturalistic Speech Misperception - a Computational Corpus-based Study. Computational Linguistics Workshop, NELS 43 - the 43rd Annual Meeting of the North East Linguistic Society, New York City, NY, The City University of New York, USA. October 2012
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         Tang. K., & <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a> Learning from Mistakes: Computational Modelling of Slips of the Ear. 20th Manchester Phonology Meeting, Manchester, UK
-        </div>     
-        <h1 id="Conferences:Posters">Conferences: Posters</h1>    
+        </div>
+        <h1 id="Conferences:Posters">Conferences: Posters</h1>
         <h7 onClick="expandcontent('sc10')" style="cursor:hand; cursor:pointer"><div id="Example_A">2015</div></h7>
-        <div id="sc10" class="switchcontent" style="display:block">        
+        <div id="sc10" class="switchcontent" style="display:block">
         Tang, K., Tian, Y., Schwabe, E-L., Tuomainen, J. & Druks, J. Chinese abstract verbs and nouns electrified: behavioural and electrophysiological evidence for grammatical class difference at single word processing level. <a href="http://bressanone.dur.ac.uk/" target ="_blank">Thirty-Third European Workshop on Cognitive Neuropsychology</a>, Bressanone, Italy. January 2015.
-        </div>           
+        </div>
         <h7 onClick="expandcontent('sc10')" style="cursor:hand; cursor:pointer"><div id="Example_A">2014</div></h7>
-        <div id="sc10" class="switchcontent" style="display:block">        
+        <div id="sc10" class="switchcontent" style="display:block">
         Tang, K., <a href="http://www.f.waseda.jp/dechene/" target ="_blank">de Chene, B.</a> A New Corpus of Colloquial Korean and its Applications. <a href="http://www.ninjal.ac.jp/labphon14/" target ="_blank">The 14th Laboratory Phonology Conference (LabPhon 14)</a>, Tachikawa, Tokyo, Japan. July 2014. [<a href="./Files/Tang_deChene_LabPhon14_v4.1.Final.pdf" target ="_blank">Poster</a>]
-        </div>       
+        </div>
         <h7 onClick="expandcontent('sc11')" style="cursor:hand; cursor:pointer"><div id="Example_A">2013</div></h7>
-        <div id="sc11" class="switchcontent" style="display:block">        
+        <div id="sc11" class="switchcontent" style="display:block">
         Tang, K., <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Nevins, A.</a>, <a href="http://www.phonologist.org/" target ="_blank">Becker, M.</a> Prosody drives alternations: evidence from a 61 Million Word Corpus of Brazilian Portuguese. The 87th Annual Meeting of the Linguistic Society of America, Boston, Massachussetts, USA. January 2013. [<a href="./Files/Tang_Nevins_Becker_2013_Alternations_Brazilian_Portugese_LSA_Poster.pdf" target ="_blank">Poster</a>]
-        </div>                      
+        </div>
 
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
-        <h1 id="Awards_Achievements">Awards & Achievements</h1>   
-        <h7 onClick="expandcontent('sc12')" style="cursor:hand; cursor:pointer"><div id="Example_A">2009-2013</div></h7>
-        <div id="sc12" class="switchcontent" style="display:block">  
-        2013. &euro;1415. <a href="http://www.esf.org/" target ="_blank">European Science Foundation</a> Short Visit Grant received by <a href="http://www.networds-esf.eu/" target ="_blank">NetWordS</a> - 09-RNP-089, The European Network on Word Structure. Openlexicons project at the Center for Reading Research, Department of Experimental Psychology, Ghent University, Belgium 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        2013. &pound;150. <a href="http://bigdatahackathon.azurewebsites.net/" target ="_blank">The Big Data Hackathon</a> - April - <a href="http://datasciencelondon.org/" target ="_blank">Data Science London</a>. Second Prize for the Data Visualization Challenge (in 24 hours): develop a data visualization based on data provided by Peerindex (with Joaquin Atria, Mauricio Figueroa & Tim Schoof) See links for the final product "<a href="http://www.mauriciofigueroa.cl/twitter/" target ="_blank">Twittrends</a>"            
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <h1 id="Awards_Achievements">Fellowships, Awards, and Grants</h1>
+        <h7 onClick="expandcontent('sc21')" style="cursor:hand; cursor:pointer"><div id="Example_A">While at Yale (Post-Doc)</div></h7>
+        <div id="sc21" class="switchcontent" style="display:block">
+        2016. Research Grant. International Association for Forensic Phonetics and Acoustics (IAFPA) "The Phonetics of Trademark Law". Co-PI with Silvia Dahmen (University of Cologne), and Lawrence Solan (Brooklyn Law School) 
+        </div>
+        <h7 onClick="expandcontent('sc12')" style="cursor:hand; cursor:pointer"><div id="Example_A">While at University College London (Grad School)</div></h7>
+        <div id="sc12" class="switchcontent" style="display:block">
+        2013. &euro;1415. <a href="http://www.esf.org/" target ="_blank">European Science Foundation</a> Short Visit Grant received by <a href="http://www.networds-esf.eu/" target ="_blank">NetWordS</a> - 09-RNP-089, The European Network on Word Structure. Openlexicons project at the Center for Reading Research, Department of Experimental Psychology, Ghent University, Belgium
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        2013. &pound;150. <a href="http://bigdatahackathon.azurewebsites.net/" target ="_blank">The Big Data Hackathon</a> - April - <a href="http://datasciencelondon.org/" target ="_blank">Data Science London</a>. Second Prize for the Data Visualization Challenge (in 24 hours): develop a data visualization based on data provided by Peerindex (with Joaquin Atria, Mauricio Figueroa & Tim Schoof) See links for the final product "<a href="http://www.mauriciofigueroa.cl/twitter/" target ="_blank">Twittrends</a>"
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2011-2012. &pound;2,377.50 Teaching Innovation Grant (Holder: <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>), University College London, London. As part of a small interdisciplinary university-wide team to develop and implement the use of the peer-assisted learning package, PeerWise. [<a href="http://blogs.ucl.ac.uk/ele/2013/06/08/peerwise-report-on-outcomes-of-e-learning-development-grant/" target ="_blank">Report</a>]
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2011. Arts and Humanities Research Council. M.Phil./Ph.D. Studentship: M.Phil./Ph.D. in Linguistics at University College London
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        2009. The Institution of Engineering and Technology. The IET Innovation Award, Finalist: Gap year project: Automatic Testing of Novel High Resolution X-ray Optics Using Matlab (worth &#8776;&pound;20000 p.a.) 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        2009. &pound;500. Cambridge University Language Centre. Bursaries for Science and Medical Students for Language Courses Abroad: Summer Intensive Course for Modern Greek at University of Cyprus        
-        </div>   
-        <h7 onClick="expandcontent('sc13')" style="cursor:hand; cursor:pointer"><div id="Example_A">2004-2008</div></h7>
-        <div id="sc13" class="switchcontent" style="display:block">        
+        </div>
+        <h7 onClick="expandcontent('sc20')" style="cursor:hand; cursor:pointer"><div id="Example_A">While at Cambridge (Undergrad)</div></h7>
+        <div id="sc20" class="switchcontent" style="display:block">
+        2009. The Institution of Engineering and Technology. The IET Innovation Award, Finalist: Gap year project: Automatic Testing of Novel High Resolution X-ray Optics Using Matlab (worth &#8776;&pound;20000 p.a.)
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        2009. &pound;500. Cambridge University Language Centre. Bursaries for Science and Medical Students for Language Courses Abroad: Summer Intensive Course for Modern Greek at University of Cyprus
+        </div>
+        <h7 onClick="expandcontent('sc19')" style="cursor:hand; cursor:pointer"><div id="Example_A">Pre-University</div></h7>
+        <div id="sc19" class="switchcontent" style="display:block">
 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2006. The Year In Industry Contribution to Business Award, Finalist: Gap year project.
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2005. Rotary International in Great Britain and Ireland. Rotary Youth Speaks (Public Speaking Competition), Zone Finalists.
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2005. &pound;4000. The Institution of Engineering and Technology. The IET Fuse Scholarship: University
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2001-2005. School prizes: The Clayton Maths Prize, Physics , ICT and Geography.
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2004. U.K. Senior Mathematical Challenge Silver Certificate.
-        </div>  
+        </div>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
 
 
         <h1 id="Projects_Work_Experience">Projects & Work Experience</h1>
         <h7 onClick="expandcontent('sc16')" style="cursor:hand; cursor:pointer"><div id="Example_A">Ongoing</div></h7>
-        <div id="sc16" class="switchcontent" style="display:block"> 
+        <div id="sc16" class="switchcontent" style="display:block">
 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        2011 - Present. The Effects Of Alcohol On Second Language Phonetic Accuracy, University College London, Dept. of Linguistics (Working with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>). 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        2012 - Present. Visual word recognition in the Chinese Brain: An event-related potential study, University College London, Dept. of Linguistics & Dept. of Speech Hearing and Phonetic Sciences (Working with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/judit-druks" target ="_blank">Dr. Judit Druks</a>, <a href="http://www.ucl.ac.uk/speech-research-group/people/research-partners/j-tuomainen" target ="_blank">Dr. Jyrki Tuomainen</a>, and <a href="http://sandbox.linguist.univ-paris-diderot.fr/fr/Gens/Tian" target ="_blank">Dr. Ye Tian</a>). 
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        2011 - Present. The Effects Of Alcohol On Second Language Phonetic Accuracy, University College London, Dept. of Linguistics (Working with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>).
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        2012 - Present. Visual word recognition in the Chinese Brain: An event-related potential study, University College London, Dept. of Linguistics & Dept. of Speech Hearing and Phonetic Sciences (Working with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/judit-druks" target ="_blank">Dr. Judit Druks</a>, <a href="http://www.ucl.ac.uk/speech-research-group/people/research-partners/j-tuomainen" target ="_blank">Dr. Jyrki Tuomainen</a>, and <a href="http://sandbox.linguist.univ-paris-diderot.fr/fr/Gens/Tian" target ="_blank">Dr. Ye Tian</a>).
 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2013 - Present. <a href="http://crr.ugent.be/programs-data/lexicon-projects" target ="_blank">OpenLexicons</a> project, The Center for Reading Research, Department of Experimental Psychology, Ghent University, Belgium, (Working with <a href="http://crr.ugent.be/members/marc-brysbaert" target ="_blank">Prof. Marc Brysbaert</a>, <a href="http://crr.ugent.be/members/emmanuel-keuleers" target ="_blank">Dr. Emmanuel Keuleers</a>, and <a href="http://crr.ugent.be/members/pawel-mandera" target ="_blank">Pawe&#322 Mandera</a>).
-        </div>  
+        </div>
 
         <h7 onClick="expandcontent('sc17')" style="cursor:hand; cursor:pointer"><div id="Example_A">Past</div></h7>
-        <div id="sc17" class="switchcontent" style="display:block"> 
+        <div id="sc17" class="switchcontent" style="display:block">
 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         July-August 2008. Hyder Consulting (engineering consultancy, 4000 employees). Summer Trainee. Site investigation, extensive report writing, administrative work
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         2005 - 2006. Oxford Danfysik (now FMB Oxford) (specialist in synchrotron components, 35 employees). Year In Industry Student. Co-founded a project for automatic testing of novel high resolution X-ray optics using Matlab, which subsequently reached finals of the IET Innovation Awards 2009. This software enables unattended motion testing of synchrotron components which allows 70% of the company's testing to be automated and gives an approximate annual saving of &pound;20,000. Learnt Matlab from scratch. Projects involving use of 3D CAD design, AutoCAD and Solid Edge. Assembled electronic devices and detectors.
-        </div>  
+        </div>
 
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
-        <h1 id="Computer">Experimental-Computational skills</h1> 
+        <h1 id="Computer">Experimental-Computational skills</h1>
         <b>Psycholinguistic tools</b>: Frequency corpora for Brazilian Portuguese and Korean, Praat scripts & Linger scripts [<a href="http://tang-kevin.github.io/Tools.html" target ="_blank">http://tang-kevin.github.io/Tools.html</a>]
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>        
-        <b>Programming</b>: <a href="https://www.python.org/" target ="_blank">Python</a>, <a href="www.mathworks.co.uk" target ="_blank">Matlab</a> & HTML 
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>          
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        <b>Programming</b>: <a href="https://www.python.org/" target ="_blank">Python</a>, <a href="www.mathworks.co.uk" target ="_blank">Matlab</a> & HTML
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         <b>Data Analysis</b>: <a href="www.r-project.org" target ="_blank">R Statistical Software</a>, EEGLAB & ERPLAB
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         <b>Speech</b>: <a href="www.praat.org" target ="_blank">Praat</a> & Forced-Alignment (<a href="http://htk.eng.cam.ac.uk/" target ="_blank">HTK</a>)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
-        <b>Experimental</b>: <a href="http://www.psychopy.org/" target ="_blank">Psychopy</a>, <a href="https://github.com/tlozoot/experigen" target ="_blank">Crowdsourcing with Experigen</a> + <a href="https://www.mturk.com/mturk/welcome" target ="_blank">MTurk</a> & Electroencephalography (EEG)  
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
+        <b>Experimental</b>: <a href="http://www.psychopy.org/" target ="_blank">Psychopy</a>, <a href="https://github.com/tlozoot/experigen" target ="_blank">Crowdsourcing with Experigen</a> + <a href="https://www.mturk.com/mturk/welcome" target ="_blank">MTurk</a> & Electroencephalography (EEG)
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         <b>Document</b>: <span class="latex">L<sup>A</sup>T<sub>E</sub>X</span> & MSOffice
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         <b>OS</b>: Unix/Linux(Terminal) & Windows
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
 
@@ -460,38 +461,38 @@ window.onunload=saveswitchstate
         <h7 onClick="expandcontent('sc14')" style="cursor:hand; cursor:pointer"><div id="Example_A">Lecturing:</div></h7>
         <div id="sc14" class="switchcontent" style="display:block">
         PLINSTAT: Introduction to Statistics for Linguists using R. Spring 2015.
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>          
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         PLINSTAT: Introduction to Statistics for Linguists using R. Autumn 2013. (Co-lecturing with <a href="http://sandbox.linguist.univ-paris-diderot.fr/fr/Gens/Tian" target ="_blank">Dr. Ye Tian</a>)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         PLINSTAT: Introduction to Statistics for Linguists using R. Autumn 2012. (Co-lecturing with <a href="http://sandbox.linguist.univ-paris-diderot.fr/fr/Gens/Tian" target ="_blank">Dr. Ye Tian</a>)
-        </div>   
+        </div>
         <h7 onClick="expandcontent('sc15')" style="cursor:hand; cursor:pointer"><div id="Example_A">Tutoring:</div></h7>
-        <div id="sc15" class="switchcontent" style="display:block">        
+        <div id="sc15" class="switchcontent" style="display:block">
         PLIN1102/PLING113: Introduction to Phonetics and Phonology B. Spring 2013 (50 MA students)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         PLIN1101/PLING113 : Introduction to Phonetics and Phonology A. Autumn 2012 (50 MA students)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         PLIN1102/PLING113: Introduction to Phonetics and Phonology B. Spring 2012 (50 MA students)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         PLIN1101/PLING103: Introduction to Phonetics and Phonology A. Autumn 2011 (50 MA students)
-        </div>  
+        </div>
         <h7 onClick="expandcontent('sc16')" style="cursor:hand; cursor:pointer"><div id="Example_A">Supervision:</div></h7>
-        <div id="sc16" class="switchcontent" style="display:block">        
+        <div id="sc16" class="switchcontent" style="display:block">
         MA dissertation, Carly Morris, MA in Linguistics, 2013 (Co-supervision with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/john-harris" target ="_blank">Prof. John Harris</a>) <br>
         - "The Effect of Alcohol on Consonant Cluster Reduction". (Distinction)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         MA dissertation, Mike Hindley, MA in Linguistics, 2013 (Co-supervision with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>)<br>
         - "A Study into the Effect of Alcohol on L2: Germans Speaking English" (Distinction)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         MA dissertation, Ji Hye Kwon, MA in Linguistics, 2013 (Co-supervision with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>) <br>
         - "The Effect of Alcohol on the L2 Vowels of Korean L1 Speakers" (Distinction)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>  
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         MA dissertation, Yan Lou, MA in Linguistics, 2013 (Co-supervision with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>) <br>
         - "Mandarin Chinese Speech Perception in Noise" (Distinction)
-        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/> 
+        <hr style="border: none; height: 2px; color: #C8C8C8; background: #C8C8C8;"/>
         MA dissertation, Yuen Lam, MA in Linguistics, 2013 (Co-supervision with <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>) <br>
         - "Slips of the Ear in Mandarin Chinese" (Pass)
-        </div>    
+        </div>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
 
         <h1 id="Membership">Professional Memberships</h1>
@@ -502,8 +503,8 @@ window.onunload=saveswitchstate
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
         <h1 id="Professional Services">Professional Services </h1>
         <ul type="square">
-        <li><b>Reviewer</b></li> 
-        <ul type="circle"> 
+        <li><b>Reviewer</b></li>
+        <ul type="circle">
           <li><a href="http://www.journals.elsevier.com/lingua/" target ="_blank">Lingua</a> - An International Review of General Linguistics</li>
           <li><a href="http://www.plosone.org/" target ="_blank">PLOS ONE</a> - The world’s first multidisciplinary Open Access journal</li>
           <li><a href="http://www.opticon1826.com/" target ="_blank">Opticon1826</a> - An all-faculty, peer reviewed academic journal, run and edited by UCL postgraduate students who represent all UCL faculties</li>
@@ -516,7 +517,7 @@ window.onunload=saveswitchstate
           <li><a href="http://www.ucl.ac.uk/llsd/" target ="_blank">Laboratory for Language and Speech Diversions (LLSD, UCL)</a>, Director: <a href="http://www.ucl.ac.uk/pals/people/profiles/academic-staff/andrew-nevins" target ="_blank">Prof. Andrew Nevins</a>, 2011 - Present </li>
           <li>(with Nicholas Neasom) The <a href="http://www.ucl.ac.uk/pals/research/linguistics/events/phonologyrg" target ="_blank">UCL Phonology Reading Group</a>, 2013 - 2014</li>
         </ul>
-        </ul> 
+        </ul>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
         <h1 id="Interpersonal skills">Interpersonal skills</h1>
         <ul type="square">
@@ -527,16 +528,16 @@ window.onunload=saveswitchstate
         </ul>
         <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
       <h1 id="Language">Language skills & Qualifications</h1>
-      <ul type="square">        
+      <ul type="square">
         <li><b>Cantonese</b>. Native.</li>
           <ul type="circle">
           <li>Primary education in Cantonese and English, Hong Kong</li>
           </ul>
         <li><b>English</b>. Fluent.</li>
-          
+
           <ul type="circle">
           <li>2000-Present. Secondary and higher education in English, United Kingdom.</li>
-          </ul> 
+          </ul>
         <li><b>Mandarin Chinese</b>. Advanced.</li>
           <ul type="circle">
           <li>2007-2008. Advanced. Cambridge University Engineering Language Department. 2.i</li>
@@ -544,15 +545,15 @@ window.onunload=saveswitchstate
 (Departmental Language prize)</li>
           </ul>
         <li><b>Modern Greek</b>. Intermediate.</li>
-           
+
           <ul type="circle">
           <li>July-Aug 2009. Intermediate Level 2/5. University of Cyprus. Quite good</li>
-          </ul> 
-        <li><b>Spanish</b>. Beginner.</li> 
+          </ul>
+        <li><b>Spanish</b>. Beginner.</li>
           <ul type="circle">
           <li>Aug-Sep 2007. A1-Elemental. El Instituto Salmantino de Lenguas Aplicadas, Spain. Excellent</li>
-          </ul> 
-      </ul> 
+          </ul>
+      </ul>
       <h9><a href="#top" title="To the Top">&#x25B4</a></h9>
       </section>
 
@@ -569,11 +570,11 @@ window.onunload=saveswitchstate
           <li><a href="#CurrentPosition">Current Position</a></li>
           <li><a href="#Education">Education</a></li>
           <li><a href="#Publications">Publications</a></li>
-          <li><a href="#Outreach">Outreach</a></li>          
+          <li><a href="#Outreach">Outreach</a></li>
           <li><a href="#Conferences:Talks">Conferences: Talks</a></li>
           <li><a href="#Conferences:Posters">Conferences: Posters</a></li>
           <li><a href="#Awards_Achievements">Awards & Achievements</a></li>
-          <li><a href="#Projects_Work_Experience">Projects & Work Experience</a></li>          
+          <li><a href="#Projects_Work_Experience">Projects & Work Experience</a></li>
           <li><a href="#Computer">Experimental-Computational skills</a></li>
           <li><a href="#Teaching">Teaching</a></li>
           <li><a href="#Membership">Professional Memberships</a></li>
@@ -586,12 +587,12 @@ window.onunload=saveswitchstate
       <section>
         <h2 id="Contact Details">Contact Details</h2>
         <address>
- <p>Email: <a href="mailto:kevin.tang.10@ucl.ac.uk" target="_blank">kevin.tang@yale.edu</a></p><p>Office: Dow Hall (370 Temple St.; <a href="https://maps.google.com?q=370+Temple+St+New+Haven+CT+06511" target="_blank">map</a>) Rm. 301, New Haven, CT, USA</p><p>Mailing Address: Dept. of Linguistics, Yale University, P.O. Box 208366, New Haven, CT, 06520-8366 </p> 
-          <p>Skype: <a href="skype:kevin.tang.cantab?chat" target="_blank">kevin.tang.cantab</a> 
+ <p>Email: <a href="mailto:kevin.tang.10@ucl.ac.uk" target="_blank">kevin.tang@yale.edu</a></p><p>Office: Dow Hall (370 Temple St.; <a href="https://maps.google.com?q=370+Temple+St+New+Haven+CT+06511" target="_blank">map</a>) Rm. 301, New Haven, CT, USA</p><p>Mailing Address: Dept. of Linguistics, Yale University, P.O. Box 208366, New Haven, CT, 06520-8366 </p>
+          <p>Skype: <a href="skype:kevin.tang.cantab?chat" target="_blank">kevin.tang.cantab</a>
 <br>Twitter: @tang_kevin <a href="https://twitter.com/tang_kevin" class="twitter-follow-button" data-show-count="false">Follow @tang_kevin</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
         Website: <a href="http://tang-kevin.github.io" target="_blank">http://tang-kevin.github.io</a><br>
-        Departmental: <a href="http://ling.yale.edu/people/kevin-tang" target="_blank"> 
+        Departmental: <a href="http://ling.yale.edu/people/kevin-tang" target="_blank">
 goo.gl/pSaN9u</a><br>
         Linkedin: <a href="https://www.linkedin.com/profile/view?id=50571554" target="_blank">goo.gl/SEiPcx</a><br>
         Academia.edu: <a href="https://ucl.academia.edu/KevinTang" target="_blank">goo.gl/TcAju8</a><br>

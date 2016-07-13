@@ -84,7 +84,7 @@ blockquote:after, q:after{content:''; font-size:26px; line-height:0;}
 
 #container{padding:60px 0; clear:both; line-height:1.6em;}
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6{color:#333333; background-color:#FFFFFF; font-variant:small-caps;}
-#container h1:first-letter, #container h2:first-letter, #container h3:first-letter, #container h4:first-letter, #container h5:first-letter, #container h6:first-letter{font-size:2em;}
+#container h1:first-letter{font-size:2em;}, #container h2:first-letter, #container h3:first-letter, #container h4:first-letter, #container h5:first-letter, #container h6:first-letter{font-size:2em;}
 #container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
 
 /* ------Content-----*/
