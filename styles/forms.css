@@ -8,7 +8,8 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 form, fieldset, legend{margin:0; padding:0; border:none;}
 legend{display:none;}
-input, textarea, select{font-size:1em; font-family:Georgia,"Times New Roman",Times,serif;}
+/*input, textarea, select{font-size:1em; font-family:Georgia,"Times New Roman",Times,serif;}*/
+input, textarea, select{font-size:1em; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;}
 
 /* ----------------------------------------------Forms in Content Area-------------------------------------*/
 

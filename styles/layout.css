@@ -16,7 +16,8 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 html{overflow-y:scroll;}
 
-body{margin:0; padding:0; font-size:100%; font-family:Georgia, "Times New Roman", Times, serif; color:#3c3c3c; background-color:#F2F2F2;}
+/*body{margin:0; padding:0; font-size:100%; font-family:Georgia, "Times New Roman", Times, serif; color:#3c3c3c; background-color:#F2F2F2;}*/
+body{margin:0; padding:0; font-size:100%; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color:#3c3c3c; background-color:#F2F2F2;}
 
 .justify{text-align:justify;}
 .bold{font-weight:bold;}
@@ -53,9 +54,9 @@ address, article, aside, figcaption, figure, footer, header, hgroup, nav, sectio
 
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
-.row1, .row1 a{color:#FFFFFF; background-color:#222222;}
+.row1, .row1 a{color:#FFFFFF; background-color:#0e4c92;}
 .row2{color:#3c3c3c; background-color:#FFFFFF;}
-.row2 a{color:#82A1A6; background-color:#FFFFFF;}
+.row2 a{color:#337ab7; background-color:#FFFFFF;}
 .row3, .row3 a{color:#3c3c3c; background-color:#F2F2F2;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
@@ -72,11 +73,12 @@ blockquote:after, q:after{content:''; font-size:26px; line-height:0;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0;}
+/*#header{padding:20px 0;}*/
+#header{padding:20px 0;}
 
 #header hgroup{display:block; float:left; width:auto; clear:right;}
 #header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
-#header hgroup h1{font-size:3em; font-variant:small-caps; line-height:1em;}
+#header hgroup h1{font-size:2em; font-variant:small-caps; line-height:1em;}
 #header hgroup h1 span{font-size:1.2em;}
 #header hgroup h2{font-size:1em;}
 
