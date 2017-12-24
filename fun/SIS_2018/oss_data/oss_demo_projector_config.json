@@ -1,0 +1,17 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "SIS 200 Dimensions",
+      "tensorShape": [14150, 200],
+      "tensorPath": "oss_data/sisprefix_tensor.tsv",
+      "metadataPath": "oss_data/sisprefix_metadata.tsv"
+    },
+    {
+      "tensorName": "Word2Vec 10K",
+      "tensorShape": [10000, 200],
+      "tensorPath": "oss_data/word2vec_10000_200d_tensors.bytes",
+      "metadataPath": "oss_data/word2vec_10000_200d_labels.tsv"
+    }
+  ],
+  "modelCheckpointPath": "Demo datasets"
+}
