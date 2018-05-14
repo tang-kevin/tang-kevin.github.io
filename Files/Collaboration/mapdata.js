@@ -993,8 +993,16 @@ var simplemaps_worldmap_mapdata={
       description: "<img style=\"float:left; margin-right: 0px;\" src=\"images/logos/brooklynlaw.png\" height=\"64\" />\n<a  href='https://www.brooklaw.edu/faculty/directory/facultymember/biography.aspx?id=larry.solan'>Prof. Lawrence Solan (Law)</a><br />",
       color: "blue",
       opacity: "0.5"
+    },
+    "8": {
+      name: "Universität Düsseldorf",
+      lat: "51.22172",
+      lng: "6.77616",
+      type: "marker",
+      description: "<img style=\"float:left; margin-right: 0px;\" src=\"images/logos/Logo_HHU_DUS.svg\" height=\"64\" />\n<a  href='http://www.isi.hhu.de/nc/teampersonal/detailseite.html?tt_address%5Bperson%5D=12274&tt_address%5Bfunktion%5D=14275'>Dr. Dinah Baer-Henney (Institut für Sprache und Information)</a><br />",
+      color: "blue",
+      opacity: "0.5"
     }
-
   },
   labels: {},
   regions: {
