@@ -930,7 +930,7 @@ var simplemaps_worldmap_mapdata={
       lat: "51.500000000",
       lng: "-0.166666667",
       type: "marker",
-      description: "<img style=\"float:left; margin-right: 20px;\" src=\"images/logos/University_College_London_logo.svg.png\" height=\"64\"/><br />\n<a  href='https://www.ucl.ac.uk/pals/people/john-harris' >Prof. John Harris (Linguistics)</a><br /><a  href='https://www.ucl.ac.uk/pals/people/andrew-nevins' onClick=\"alert('You would go to Link 2')\">Prof. Andrew Nevins (Linguistics)</a><br /><a  href='https://www.ucl.ac.uk/speech-research-group/people/staff/p-howell' onClick=\"alert('You would go to Link 3')\">Prof. Peter Howell (Psychology)</a><br />",
+      description: "<img style=\"float:left; margin-right: 20px;\" src=\"images/logos/University_College_London_logo.svg.png\" height=\"64\"/><br />\n<a  href='https://www.ucl.ac.uk/pals/people/bronwen-evans' >Prof. Bronwen Evans (Speech, Hearing & Phonetic Sciences)</a><br /><a  href='https://www.ucl.ac.uk/pals/people/john-harris' >Prof. John Harris (Linguistics)</a><br /><a  href='https://www.ucl.ac.uk/pals/people/andrew-nevins' onClick=\"alert('You would go to Link 2')\">Prof. Andrew Nevins (Linguistics)</a><br /><a  href='https://www.ucl.ac.uk/speech-research-group/people/staff/p-howell' onClick=\"alert('You would go to Link 3')\">Prof. Peter Howell (Psychology)</a><br />",
       color: "red"
     },
     "1": {
@@ -963,7 +963,7 @@ var simplemaps_worldmap_mapdata={
       lat: "37.308750",
       lng: "-72.931877",
       type: "marker",
-      description: "<img style=\"float:left; margin-right: 0px;\" src=\"images/logos/Yale-University-Logo-Header.png\" height=\"64\" /><br /><br /><br /><br />\n<a  href='https://medicine.yale.edu/lab/gruen/'>Prof. Jeffrey R. Gruen (Pediatrics and Genetics)</a><br /><a  href='https://medicine.yale.edu/pediatrics/people/mellissa_demille-1.profile'>Dr. Mellissa DeMille (Pediatrics)</a><br /><a  href='https://ling.yale.edu/people/christopher-geissler'>Chris Geissler (Linguistics)</a>",
+      description: "<img style=\"float:left; margin-right: 0px;\" src=\"images/logos/Yale-University-Logo-Header.png\" height=\"64\" /><br /><br /><br /><br />\n<a  href='https://ling.yale.edu/people/jason-shaw'>Prof. Jason Shaw (Linguistics)</a><br /><a  href='https://medicine.yale.edu/lab/gruen/'>Prof. Jeffrey R. Gruen (Pediatrics and Genetics)</a><br /><a  href='https://medicine.yale.edu/pediatrics/people/mellissa_demille-1.profile'>Dr. Mellissa DeMille (Pediatrics)</a>",
       color: "red",
       opacity: "0.8"
     },
@@ -977,11 +977,11 @@ var simplemaps_worldmap_mapdata={
       opacity: "0.8"
     },
     "6": {
-      name: "University of Cologne",
-      lat: "50.935173",
-      lng: "6.953101",
+      name: "University of Leipzig",
+      lat: "51.3386",
+      lng: "12.3785",
       type: "marker",
-      description: "<img style=\"float:left; margin-right: 20px;\" src=\"images/logos/Logo-Uni-Koeln.png\" height=\"64\" />\n<a  href='http://ifl.phil-fak.uni-koeln.de/sdahmen.html'>Dr. Silvia Dahmen (Linguistic - Phonetics)</a><br />",
+      description: "<img style=\"float:left; margin-right: 20px;\" src=\"images/logos/Leipzig_logo.svg.png\" height=\"64\" />\n<a  href='http://herder.philol.uni-leipzig.de/hi.site,postext,mitarbeiter,a_id,7204.html'>Dr. Silvia Dahmen (Linguistic - Phonetics)</a><br />",
       color: "red",
       opacity: "0.8"
     },
