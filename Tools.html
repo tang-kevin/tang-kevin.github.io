@@ -72,66 +72,18 @@ $(document).ready(function () {
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
     <h1>SUBTLEX-KR</h1>
     <p>SUBTLEX-KR is a 90 million word corpus of conversational Korean, compiled using subtitle texts.<br><br>   
-    Availability: (Forthcoming), please email me if you would like to be notified when it becomes available: <a href="mailto:tang.kevin@ufl.edu" target="_blank">tang.kevin@ufl.edu</a><br><br>
+    Availability: (Forthcoming), please email me if you would like to be notified when it becomes available: <a href="mailto:kevin.tang@hhu.de" target="_blank">kevin.tang@hhu.de</a><br><br>
     <b>Citation</b>:<br>
     Tang, K., <a href="http://www.f.waseda.jp/dechene/" target ="_blank">de Chene, B.</a> (2014, forthcoming)  A New Corpus of Colloquial Korean and its Applications. <a href="http://www.ninjal.ac.jp/labphon14/" target ="_blank">The 14th Laboratory Phonology Conference (LabPhon 14)</a>, Tachikawa, Tokyo, Japan. July 2014. [<a href="./Files/Tang_deChene_LabPhon14_v4.1.Final.pdf" target ="_blank">poster</a>]</p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.<br><br>
+
     <h1 id="Praat">PRAAT TOOLKIT</h1>
-    <p>A selection of Praat scripts written for specific purposes. Please see individual files for details<br><br>
-    <b>Silence Inserter</b>: This script inserts a silence between two adjacent labels in a TextGrid. It modifies both the Sound file and the TextGrid file. It works on all the files in specified directories. [<a href="Files/Tools/Praat/silence_inserter_Tang_2014.praat" download>Download</a>] <br><br>
-    <b>Channel Extractor</b>: This script extracts only one channel of all the files in a specified directory. [<a href="Files/Tools/Praat/channel_extractor_Tang_2014.praat" download>Download</a>]<br>
-    <br>
-    <b>Mean Formant Analyser</b>: This script calculates the mean formant values (F1,F2,F3) of each labelled segment in each pair of Sound and TextGrid files (which have to have the same name). The mean formant values are calculated over a region of the label, e.g. the beginning (20-30%) of a diphthong. It works on all the files in specified directories. [<a href="Files/Tools/Praat/mean_formant_analyser_Tang_2015.praat" download>Download</a>] <br><br>
-    <b>Citation</b>:<br>
-    Tang, K. (2014-<script language="javascript" type="text/javascript">
-var today = new Date()
-var year = today.getFullYear()
-document.write(year)
-</script>). Praat Toolkit. http://tang-kevin.github.io/Tools.html. [<a href="Files/Bibs/Tang_Praat.bib" target ="_blank">bib</a>]</p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+    <p>A selection of Praat scripts written for specific purposes. Available at <a href="https://osf.io/8qaxp/" target ="_blank">https://osf.io/8qaxp/</a> Please see the wiki section for details.<br><br> Please email <a href="mailto:kevin.tang@hhu.de" target="_blank">kevin.tang@hhu.de</a> if you have any questions or suggestions.<br><br>
+    
+
     <h1 id="Linger">LINGER TOOLKIT</h1>
     <a href="http://tedlab.mit.edu/~dr/Linger/" target ="_blank">Linger</a> is a software package for performing reading, listening, and other sentence processing experiments. <br>
-    Even though Linger is an excellent piece of software, its analytical tools, Lingalyzer, Lingrapher, Subjector, are becoming increasingly outdated. The <i>Linger Toolkit</i> aims to fill this gap. Please email <a href="mailto:tang.kevin@ufl.edu" target="_blank">tang.kevin@ufl.edu</a> if you have any questions or suggestions.<br><br>
-
-    <b>Linger-Summarizer</b>: A Python script that summarizes .dat files from Linger into a tab-delimited format. (Version 1.1) [<a href="Files/Tools/Linger/Linger_Summarizer_Tang_2018.py" download>Download</a>]<br>
-    How to use:<br>
-    The script has a command line interface. It was tested with Python 2.7.6<br>
-    <i>Input</i>: a) A directory contains dat files, b) the path of the output file <br>
-    <i>Optional input</i>: a) the encoding of the dat files, b) the upper bound of the RT (default 2500ms) c) the lower bound of the RT (default 100ms).<br>
-    e.g. "<i>python ./Linger_Summarizer_Tang_2018.py -i ./dats/ -o ./dats.summary.tab</i>"<br>
-    See all options with "<i>python ./Linger_Summarizer_Tang_2018.py -h</i>"<br>
-    <ul>Output headers:
-    <li>Column 1 - 8 are copies of the columns in dat with the headers "subject experiment  item  condition Wpos  word  region  Rtraw"</li>
-    <li>Column 9 "Rtraw.1" is a version of "Rtraw" with outliers being replaced by the symbol "-" with the exception of any "Rtraw" that has a non-integer value in the "Wpos" column. Outlier criteria are set by users, upper bound (default 2500 ms) and lower bound (default 100 ms). </li>
-    <li>Column 10 "correct" contains the accuracy of the response for each item.</li>
-    <li>Column 11 "Lpos" contains the position of the item in the presented order.</li>
-    <li>Column 12 "LogRT" is the log(base-10) transformed RTs of "Rtraw.1".</li>
-    <li>Column 13 "Wlen" is the length of "word".</li>
-    </ul>
-    <br>
-    <b>Linger-Filter</b>: An R script that filters a summarised linger text file data by mean and std calculated on multiple variables. (Version 1.4)</b>. [<a href="Files/Tools/Linger/Linger-Filter_Tang_2018.R" download>Download</a>]<br>
-    <i>Description:</i>  <br>
-    This script allows the user to filter a variable, called it VarX (e.g. logRT or Correct) by a subset of one or more variables. For instance, one might want to filter RT by-subject, by-condition and by region, the "grouping variables" here would be subject, condition and region. The filtering strategy is as followed: 1) The mean and standard deviation of VarX are calculated for each unique combination of the grouping variables. 2) VarX above or below N times the standard deviation from the mean are filtered.<br>
-    How to use: 
-    Open the script in R, complete the user specification section (see below for detail), save the script and finally run the whole script.
-    <ul>The user specification would ask you for:
-    <li> Your working directory
-    <li> The name of your summarised linger text file
-    <li> The delimiter of the text file
-    <li> The name of the output filtered text file
-    <li> The name of the output outliers text file
-    <li> The threshold of the filter? (how many std above or below the mean)
-    <li> The name(s) of the grouping variables
-    <li> The name of the filtering variable
-    </ul>
-
-    <br>
-    <b>Citation</b>:<br>
-    Tang, K. (2014-<script language="javascript" type="text/javascript">
-var today = new Date()
-var year = today.getFullYear()
-document.write(year)
-</script>). Linger Toolkit. www.kevintang.org/Tools.html. [<a href="Files/Bibs/Tang_Linger.bib" target ="_blank">bib</a>]</p> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+    Even though Linger is an excellent piece of software, its analytical tools, Lingalyzer, Lingrapher, Subjector, are becoming increasingly outdated. The <i>Linger Toolkit</i> aims to fill this gap. Available at <a href="https://osf.io/v59gr/" target ="_blank">https://osf.io/v59gr/</a> Please see the wiki section for details.<br><br> Please email <a href="mailto:kevin.tang@hhu.de" target="_blank">kevin.tang@hhu.de</a> if you have any questions or suggestions.<br><br>
 
     <!-- ################################################################################################ -->
     <div class="clear"></div>
